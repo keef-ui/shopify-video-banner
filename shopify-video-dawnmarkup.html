@@ -1,0 +1,73 @@
+<html>
+
+<body>
+    <section class="video-hero">
+        <div class="video-wrapper" style="">
+            <video playsinline autoplay muted loop preload="auto" style="object-fit: cover;"  poster={{ section.settings.poster }}>
+                <source src={{ section.settings.video_url }}
+                    type="video/mp4">
+            </video>
+        </div>
+        <div class="video-content">
+            <div class="text-center p-4 pb-4 lg:px-30 w-full h-full self-center flex">
+                <div class="self-center mx-auto lg:text-center"><!---->
+                    <div
+                        class="title-text font-extrabold mx-auto mb-5 uppercase tracking-wide text-3xl md:text-4xl lg:mb-7 lg:text-black-2 lg:text-5xl xxl:text-6xl">
+                        WE ARE <br>OUR CHOICES&nbsp;</div> <!---->
+                    <div
+                        class="hidden w-13/20 max-w-lg mb-7 font-medium text-black-2 text-xl md:text-2xl tracking-normal leading-normal lg:block mx-auto">
+                        Choose better with nutrient-dense, plant-based health products to improve your performance and
+                        nourish body, mind and planet</div>
+                    <div
+                        class="mb-4 px-6 font-medium mx-auto text-lg sm:text-xl md:text-2xl tracking-normal leading-normal md:w-13/20 lg:hidden">
+                        Choose better with nutrient-dense, plant-based health products to improve your performance and
+                        nourish body, mind and planet</div>
+                    <a href="#" class="btn-home on-dark primary bg-green-thrive">
+                        Start Day One &gt;&gt;
+                    </a>
+                    <a href="#" class="btn-home ml-4 mt-2 on-dark secondary"> Shop All
+                    </a>
+                </div>
+            </div>
+            <div class="video-footer"><!---->
+                <div class="footnote-two px-8 py-1 xxl:py-0 bg-grey-77 tracking-wider w-full"><a href=""
+                        class="text-green-friday-green text-sm sm:text-lg lg:text-xl no-underline xxl:text-2xl"><strong><span
+                                class="planted-trees-counter-integer">618,032</span></strong> trees now
+                        planted
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="banner__content banner__content--middle-center page-width">
+        <div class="banner__box content-container content-container--full-width-mobile color-accent-1 gradient"><h2 class="banner__heading h0">
+                  <span>ASPIRE TO BE SUPANATURAL</span>
+                </h2><div class="banner__text body">
+                  <span>Choose better with nutrient-dense, plant-based health products to improve your performance and nourish body, mind and planet</span>
+                </div><div class="banner__buttons banner__buttons--multiple"><a href="#" class="button button--secondary">SHOP NOW</a><a href="#" class="button button--primary">BEST SELLERS</a></div></div>
+      </div>
+
+</body>
+
+</html>
+
+{% schema %}
+{
+  "name": "Video Hero",
+  "tag": "section",
+  "class": "video-hero",
+  "settings": [
+    {
+        "type": "url",
+        "id": "video_url",
+        "label": "Enter the video url here"
+    },
+    {
+        "type": "image_picker",
+        "id": "poster",
+        "label": "Add fallback background image in case video doesn't load"
+    }
+  ]
+}
+{% endschema %}
+

@@ -1,0 +1,103 @@
+<div class="vh-wrapper">
+    <div class="video-wrapper" style="">
+      <video class="video-bg" autoplay muted loop playsinline poster={{ section.settings.poster }}>
+        <source src={{ section.settings.video_url }} type='video/mp4'>
+      </video>
+      </div>
+      <div class="video-content">
+          <div class="text-center p-4 pb-4 lg:px-30 w-full h-full self-center flex">
+              <div class="self-center mx-auto lg:text-center"><!---->
+                  <div
+                      class="title-text font-extrabold mx-auto mb-5 uppercase tracking-wide text-3xl md:text-4xl lg:mb-7 lg:text-black-2 lg:text-5xl xxl:text-6xl">
+                      WE ARE <br>OUR CHOICES&nbsp;</div> <!---->
+                  <div
+                      class="hidden w-13/20 max-w-lg mb-7 font-medium text-black-2 text-xl md:text-2xl tracking-normal leading-normal lg:block mx-auto">
+                      Choose better with nutrient-dense, plant-based health products to improve your performance and
+                      nourish body, mind and planet</div>
+                  <div
+                      class="mb-4 px-6 font-medium mx-auto text-lg sm:text-xl md:text-2xl tracking-normal leading-normal md:w-13/20 lg:hidden">
+                      Choose better with nutrient-dense, plant-based health products to improve your performance and
+                      nourish body, mind and planet</div>
+                  <a href="#" class="btn-home on-dark primary bg-green-thrive">
+                      Start Day One &gt;&gt;
+                  </a>
+                  <a href="#" class="btn-home ml-4 mt-2 on-dark secondary"> Shop All
+                  </a>
+              </div>
+          </div>
+          <div class="video-footer"><!---->
+              <div class="footnote-two px-8 py-1 xxl:py-0 bg-grey-77 tracking-wider w-full"><a href=""
+                      class="text-green-friday-green text-sm sm:text-lg lg:text-xl no-underline xxl:text-2xl"><strong><span
+                              class="planted-trees-counter-integer">618,032</span></strong> trees now
+                      planted
+                  </a></div>
+          </div>
+      </div>
+</div>div>
+
+{% schema %}
+{
+  "name": "Video Background Banner",
+  "tag" :"section",
+   "class": "video-hero",
+  "settings": [
+    {
+    "type": "url",
+    "id": "video_url",
+    "label": "Enter the video url here"
+  },
+  {
+    "type": "image_picker",
+    "id": "poster",
+    "label": "Add fallback background image in case video doesn't load"
+  }
+
+],
+"presets": [
+  {
+    "name": "Video Background Banner"
+  }
+]
+}
+{% endschema %}
+
+<style>
+
+.vh-wrapper{
+  display: flex;
+  position: relative;
+min-height:90vh;
+}
+/* .video-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 90vh;
+  min-height: 100%;
+  z-index: -1;
+  filter: blur({{section.settings.blur}}px) opacity({{section.settings.opacity}});
+}
+.video-heroxxx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 100px;
+/*     min-height: 90vh; */
+  position: relative;
+  overflow: hidden;
+}
+.video-hero {
+padding: 3rem 1.5rem;
+}
+
+.hero div {
+  padding: 1.5em;
+  background: hsl(0 100% 100% / 25%);
+  backdrop-filter: blur(10px);
+} */
+
+
+</style>
